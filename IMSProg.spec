@@ -181,6 +181,7 @@ cp IMSProg_programmer/README.md IMSProg_programmer.md
 %_datadir/pixmaps/IMSProg64.png
 %_datadir/pixmaps/IMSProg_database_update.png
 %_datadir/man/man1/*.1.*
+%license LICENSE
 
 %changelog
 * Tue Sep 03 2024 Mikhail Medvedev 1.4.3-2
