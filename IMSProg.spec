@@ -184,6 +184,9 @@ cp IMSProg_programmer/README.md IMSProg_programmer.md
 %license LICENSE
 
 %changelog
+* Sat Sep 07 2024 Mikhail Medvedev 1.4.3-3
+- added license file to the spec file
+
 * Tue Sep 03 2024 Mikhail Medvedev 1.4.3-2
 - added translations to the spec file
 
