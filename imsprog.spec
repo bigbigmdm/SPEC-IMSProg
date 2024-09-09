@@ -131,7 +131,7 @@ IMSProg_database_update - 使用外部Web服务器更新芯片数据库的脚本
 
 %prep
 
-%autosetup -p1 -n %{name}-%{version}
+%autosetup -p1 -n IMSProg-%{version}
 
 # update translations
 lrelease-qt5 IMSProg_editor/language/*.ts
