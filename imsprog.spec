@@ -158,10 +158,6 @@ pushd IMSProg_programmer
 %cmake_install
 popd
 
-# remove extra appdata
-rm %buildroot%_datadir/metainfo/io.github.bigbigmdm.imsprog_database_update.metainfo.xml
-rm %buildroot%_datadir/metainfo/io.github.bigbigmdm.imsprog_editor.metainfo.xml
-
 # rename README
 cp IMSProg_editor/README.md IMSProg_editor.md
 cp IMSProg_programmer/README.md IMSProg_programmer.md
@@ -180,7 +176,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %_datadir/applications/IMSProg.desktop
 %_datadir/applications/IMSProg_editor.desktop
 %_datadir/applications/IMSProg_database_update.desktop
-%_datadir/metainfo/io.github.bigbigmdm.imsprog.metainfo.xml
+%_datadir/metainfo/*.xml
 /usr/lib/udev/rules.d/*.rules
 %_datadir/pixmaps/chipEdit64.png
 %_datadir/pixmaps/IMSProg64.png
