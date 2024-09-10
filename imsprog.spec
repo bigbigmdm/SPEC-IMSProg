@@ -15,7 +15,7 @@ License: GPL-3.0-or-later
 Group: Applications/Engineering
 
 Url: https://github.com/bigbigmdm/IMSProg
-Source: https://github.com/bigbigmdm/IMSProg/archive/refs/tags/v%{version}.tar.gz 
+Source: https://github.com/bigbigmdm/IMSProg/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: gcc-c++
 BuildRequires: pkgconfig(Qt5Core)
@@ -23,82 +23,84 @@ BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: cmake(Qt5LinguistTools)
 BuildRequires: pkgconfig(libusb-1.0)
 BuildRequires: cmake
+BuildRequires: desktop-file-utils
+BuildRequires: libappstream-glib
 
 %description
-IMSProg is a free software for CH341A based chip programmers with graphical 
+IMSProg is a free software for CH341A based chip programmers with graphical
 interface. With IMSProg you can read, verify, program, erase i2C, SPI, SPI NOR,
-MicroWire, Dataflash EEPROM chips using the CH341A programmer device. 
+MicroWire, Dataflash EEPROM chips using the CH341A programmer device.
 
 IMSProg is a collection of tools:
 IMSProg - the chip programmer (it's the main part).
 IMSProg_editor - chip database editor.
-IMSProg_database_update - script to update chip database using external 
+IMSProg_database_update - script to update chip database using external
 web-server.
 
 %description -l ru_RU.UTF-8
-IMSProg - это бесплатное программное обеспечение для программаторов микросхем 
-на базе CH341A с графическим интерфейсом. С помощью IMSProg вы можете читать, 
-проверять, программировать, стирать микросхемы i2C, SPI, SPI NOR, MicroWire 
+IMSProg - это бесплатное программное обеспечение для программаторов микросхем
+на базе CH341A с графическим интерфейсом. С помощью IMSProg вы можете читать,
+проверять, программировать, стирать микросхемы i2C, SPI, SPI NOR, MicroWire
 EEPROM, DataFlash используя устройство-программатор CH341A.
 
 IMSProg - это набор инструментов:
 IMSProg - программатор микросхем (это основная часть).
 IMSProg_editor - редактор базы данных микросхем.
-IMSProg_database_update - скрипт для обновления базы данных микросхем с помощью 
+IMSProg_database_update - скрипт для обновления базы данных микросхем с помощью
 внешнего веб-сервера.
 
 %description -l de_DE.UTF-8
-IMSProg ist eine kostenlose Software für CH341A-basierte Chip-Programmiergeräte 
-mit grafischer Oberfläche. Mit IMSProg können Sie i2C, SPI, SPI NOR, MicroWire, 
-DataFlash EEPROM Chips mit dem CH341A Programmiergerät lesen, verifizieren, 
+IMSProg ist eine kostenlose Software für CH341A-basierte Chip-Programmiergeräte
+mit grafischer Oberfläche. Mit IMSProg können Sie i2C, SPI, SPI NOR, MicroWire,
+DataFlash EEPROM Chips mit dem CH341A Programmiergerät lesen, verifizieren,
 programmieren, löschen.
 
 IMSProg ist eine Sammlung von Werkzeugen:
 IMSProg - der Chip-Programmierer (das ist der Hauptteil).
 IMSProg_editor - Chipdatenbank-Editor.
-IMSProg_database_update - Skript zur Aktualisierung der Chipdatenbank mit Hilfe 
+IMSProg_database_update - Skript zur Aktualisierung der Chipdatenbank mit Hilfe
 eines externen Web-Servers.
 
 %description -l es_ES.UTF-8
-IMSProg es un software gratuito para programadores de chips basados en CH341A 
-con interfaz gráfica. Con IMSProg puede leer, verificar, programar, borrar chips 
-i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM utilizando el dispositivo 
+IMSProg es un software gratuito para programadores de chips basados en CH341A
+con interfaz gráfica. Con IMSProg puede leer, verificar, programar, borrar chips
+i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM utilizando el dispositivo
 programador CH341A.
 
 IMSProg es una colección de herramientas:
 IMSProg - el programador de chips (es la parte principal).
 IMSProg_editor - editor de bases de datos de chips.
-IMSProg_database_update - script para actualizar la base de datos de chips 
+IMSProg_database_update - script para actualizar la base de datos de chips
 utilizando un servidor web externo.
 
 %description -l hu_HU.UTF-8
-Az IMSProg egy ingyenes szoftver CH341A alapú chipprogramozók számára grafikus 
-felülettel. Az IMSProg segítségével a CH341A programozó eszközzel i2C, SPI, SPI 
-NOR, MicroWire, DataFlash EEPROM chipeket olvashat, ellenőrizhet, programozhat, 
+Az IMSProg egy ingyenes szoftver CH341A alapú chipprogramozók számára grafikus
+felülettel. Az IMSProg segítségével a CH341A programozó eszközzel i2C, SPI, SPI
+NOR, MicroWire, DataFlash EEPROM chipeket olvashat, ellenőrizhet, programozhat,
 törölhet.
 
 Az IMSProg egy eszközgyűjtemény:
 IMSProg - a chip programozó (ez a fő rész).
 IMSProg_editor - chip adatbázis szerkesztő.
-IMSProg_database_update - szkript a chip adatbázis frissítéséhez külső 
+IMSProg_database_update - szkript a chip adatbázis frissítéséhez külső
 webszerver használatával.
 
 %description -l it_IT.UTF-8
-IMSProg è un software gratuito per programmatori di chip basati su CH341A con 
-interfaccia grafica. Con IMSProg è possibile leggere, verificare, programmare, 
-cancellare chip i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM, utilizzando il 
+IMSProg è un software gratuito per programmatori di chip basati su CH341A con
+interfaccia grafica. Con IMSProg è possibile leggere, verificare, programmare,
+cancellare chip i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM, utilizzando il
 programmatore CH341A.
 
 IMSProg è una raccolta di strumenti:
 IMSProg - il programmatore di chip (è la parte principale).
 IMSProg_editor - editor del database dei chip.
-IMSProg_database_update - script per aggiornare il database dei chip utilizzando 
+IMSProg_database_update - script per aggiornare il database dei chip utilizzando
 un server web esterno.
 
 %description -l pt_BR.UTF-8
-O IMSProg é um software gratuito para programadores de chips baseados no CH341A 
-com interface gráfica. Com o IMSProg, você pode ler, verificar, programar e 
-apagar chips i2C, SPI, SPI NOR e MicroWire, DataFlash EEPROM usando o 
+O IMSProg é um software gratuito para programadores de chips baseados no CH341A
+com interface gráfica. Com o IMSProg, você pode ler, verificar, programar e
+apagar chips i2C, SPI, SPI NOR e MicroWire, DataFlash EEPROM usando o
 dispositivo programador CH341A.
 
 O IMSProg é uma coleção de ferramentas:
@@ -108,15 +110,15 @@ IMSProg_database_update - script para atualizar o banco de dados de chips usando
 um servidor da Web externo.
 
 %description -l uk_UA.UTF-8
-IMSProg - вільне програмне забезпечення для програматорів мікросхем на базі 
-CH341A з графічним інтерфейсом. За допомогою IMSProg ви можете читати, 
-перевіряти, програмувати, стирати мікросхеми i2C, SPI, SPI NOR, MicroWire, 
+IMSProg - вільне програмне забезпечення для програматорів мікросхем на базі
+CH341A з графічним інтерфейсом. За допомогою IMSProg ви можете читати,
+перевіряти, програмувати, стирати мікросхеми i2C, SPI, SPI NOR, MicroWire,
 DataFlash EEPROM за допомогою програматора CH341A.
 
 IMSProg - це набір інструментів:
 IMSProg - програматор мікросхеми (це основна частина).
 IMSProg_editor - редактор бази даних мікросхем.
-IMSProg_database_update - скрипт для оновлення бази даних чіпів за допомогою 
+IMSProg_database_update - скрипт для оновлення бази даних чіпів за допомогою
 зовнішнього веб-сервера.
 
 %description -l zh_CN.UTF-8
@@ -136,6 +138,7 @@ IMSProg_database_update - 使用外部Web服务器更新芯片数据库的脚本
 # update translations
 lrelease-qt5 IMSProg_editor/language/*.ts
 lrelease-qt5 IMSProg_programmer/language/*.ts
+
 pushd IMSProg_editor
 %cmake -DCMAKE_INSTALL_SYSCONFDIR=%_sysconfdir
 %cmake_build
@@ -162,6 +165,10 @@ rm %buildroot%_datadir/metainfo/io.github.bigbigmdm.imsprog_editor.metainfo.xml
 # rename README
 cp IMSProg_editor/README.md IMSProg_editor.md
 cp IMSProg_programmer/README.md IMSProg_programmer.md
+
+%check
+desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
+appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 
 %files
 %doc README.md IMSProg_editor.md IMSProg_programmer.md ChangeLog
