@@ -130,14 +130,12 @@ IMSProg_editor - 芯片数据库编辑器。
 IMSProg_database_update - 使用外部Web服务器更新芯片数据库的脚本。
 
 %prep
-
 %autosetup -p1 -n IMSProg-%{version}
 
+%build
 # update translations
 lrelease-qt5 IMSProg_editor/language/*.ts
 lrelease-qt5 IMSProg_programmer/language/*.ts
-
-%build
 pushd IMSProg_editor
 %cmake -DCMAKE_INSTALL_SYSCONFDIR=%_sysconfdir
 %cmake_build
