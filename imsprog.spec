@@ -12,7 +12,7 @@ Summary(pt_BR.UTF-8): Programador de chip EEPROM/Flash I2C, SPI e MicroWire para
 Summary(uk_UA.UTF-8): I2C, SPI і MicroWire EEPROM/програматор мікросхем для пристроїв CH341a
 Summary(zh_CN.UTF-8): 用于 CH341a 设备的 I2C、SPI 和 MicroWire EEPROM/闪存芯片编程器
 License: GPL-3.0-or-later
-Group: Devel
+Group: Applications/Engineering
 
 Url: https://github.com/bigbigmdm/IMSProg
 Source: https://github.com/bigbigmdm/IMSProg/archive/refs/tags/v%{version}.tar.gz 
