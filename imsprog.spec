@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.4.3
+Version: 1.4.4
 Release: %autorelease
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Sat Sep 24 2024 Mikhail Medvedev 1.4.4-1
+- Fix: incorrect reading of the DataFlash chips status register
+- Fix: In the Save menu, the cancel button causes an error message
+- Fix: Incorrect names of DataFlash chips
+- Fedora repository added
+- MacOS build support added
+- Uninstall script added
+
 * Sat Sep 07 2024 Mikhail Medvedev 1.4.3-3
 - added license file to the spec file
 
