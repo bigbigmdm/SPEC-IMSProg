@@ -1,6 +1,6 @@
 Name: imsprog
 Version: 1.4.4
-Release: %autorelease
+Release: 1
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
 Summary(ru_RU.UTF-8): I2C, SPI and MicroWire EEPROM/Flash программатор для CH341a устройств
