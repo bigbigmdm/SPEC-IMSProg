@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.4.4
+Version: 1.4.5
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Mon Jan 20 2025 Mikhail Medvedev 1.4.5-1
+- Fix: Incorrect block/page size after first read procedure
+- Fix: Incorrect reading/writing I2C low speed chips
+- Added support for MXIC MX25V8035F
+- Added I2C bus speed combobox to the main form
+
 * Tue Sep 24 2024 Mikhail Medvedev 1.4.4-1
 - Fix: incorrect reading of the DataFlash chips status register
 - Fix: In the Save menu, the cancel button causes an error message
