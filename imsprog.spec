@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.5.1
+Version: 1.5.2
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Wed Mar 05 2025 Mikhail Medvedev 1.5.2-1
+- Fix: Memory leaks
+- Fix: Gigadevice status registers write error
+- Added new SPI chip sizes
+- Added Fidelix, Zetta, MXIC OTP algorithm
+- Added to database new Boya, Winbond chips
+
 * Wed Feb 19 2025 Mikhail Medvedev 1.5.1-1
 - Fix: Incorrect install dir for udev while cross compiling
 - Added form for working with security registers for SPI NOR flash memory chips
