@@ -190,7 +190,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 - Fix: Gigadevice status registers write error
 - Added new SPI chip sizes
 - Added Fidelix, Zetta, MXIC OTP algorithm
-- Added to database new Boya, Winbond chips
+- Added support for new Boya, Winbond chips
 
 * Wed Feb 19 2025 Mikhail Medvedev 1.5.1-1
 - Fix: Incorrect install dir for udev while cross compiling
