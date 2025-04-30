@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.5.2
+Version: 1.5.3
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Tue Apr 29 2025 Mikhail Medvedev 1.5.3-1
+- Last version of QHexEdit used
+- Hex-functions optimised
+- Added support GIANTEC, DOSILICON NOR FLASH chips
+- Fix: incorrect uninstall script
+- Fix: i2C 128K size is repeated twice
+- Fix: error calculating file size
+
 * Wed Mar 05 2025 Mikhail Medvedev 1.5.2-1
 - Fix: Memory leaks
 - Fix: Gigadevice status registers write error
