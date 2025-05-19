@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.5.3
+Version: 1.6.1
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Mon May 19 2025 Mikhail Medvedev 1.6.1-1
+- Add new feature: compare files
+- Add new feature: fill test array
+- Fix: when the page size is changed, the buffer is cleared
+- Fix: the code is executed twice and the code slows down the display of the interface
+
 * Tue Apr 29 2025 Mikhail Medvedev 1.5.3-1
 - Last version of QHexEdit used
 - Hex-functions optimised
