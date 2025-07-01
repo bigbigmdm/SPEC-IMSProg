@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.6.1
+Version: 1.6.2
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,14 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Tue Jul 1 2025 Mikhail Medvedev 1.6.2-1
+- Fix: program crashed if security registers was less than 256 bytes
+- Fix: Information in the status bar disappears when hovering over a menu
+- Added comparison of INTEL HEX and ASUS CAP with other files
+- Added close and minimise buttons for subordinate forms
+- New chips added to database
+- Chip information form code optimized
+
 * Mon May 19 2025 Mikhail Medvedev 1.6.1-1
 - Add new feature: compare files
 - Add new feature: fill test array
