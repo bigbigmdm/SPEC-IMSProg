@@ -191,6 +191,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 - Added traditional chinese translation
 - New chips added to database
 
+* Thu Jul 24 2025 Fedora Release Engineering <releng@fedoraproject.org> - 1.6.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Tue Jul 1 2025 Mikhail Medvedev 1.6.2-1
 - Fix: program crashed if security registers was less than 256 bytes
 - Fix: Information in the status bar disappears when hovering over a menu
