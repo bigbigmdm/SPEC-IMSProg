@@ -185,7 +185,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
-* Wed Nov 6 2025 Mikhail Medvedev 1.7.2-1
+* Wed Nov 06 2025 Mikhail Medvedev 1.7.2-1
 - Fix: pressing the Stop key did not stop auto operations
 - Added support for SPI NAND flash
 - Added traditional chinese translation
