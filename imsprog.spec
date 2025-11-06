@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.6.2
+Version: 1.7.1
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a devices
@@ -185,6 +185,12 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Wed Nov 6 2025 Mikhail Medvedev 1.7.2-1
+- Fix: pressing the Stop key did not stop auto operations
+- Added support for SPI NAND flash
+- Added traditional chinese translation
+- New chips added to database
+
 * Tue Jul 1 2025 Mikhail Medvedev 1.6.2-1
 - Fix: program crashed if security registers was less than 256 bytes
 - Fix: Information in the status bar disappears when hovering over a menu
