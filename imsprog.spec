@@ -13,6 +13,7 @@ Summary(uk_UA.UTF-8): I2C, SPI і MicroWire EEPROM/програматор мік
 Summary(zh_CN.UTF-8): 用于 CH341a/CH347t 设备的 I2C、SPI 和 MicroWire EEPROM/闪存芯片编程器
 SourceLicense: GPL-2.0-or-later AND GPL-3.0-or-later AND LGPL-2.1-only and BSD-1-Clause
 License: GPL-3.0-or-later AND LGPL-2.1-only
+ExcludeArch: s390 s390x
 
 Group: Applications/Engineering
 
