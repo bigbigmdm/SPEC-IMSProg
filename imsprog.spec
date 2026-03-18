@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.8.1
+Version: 1.8.2
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a/CH347t devices
@@ -189,6 +189,13 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Wed Mar 18 2026 Mikhail Medvedev 1.8.2-1
+- Fix: error reading/writing data from I2C chips on the CH347T version 5.44
+- Fix: bit error during NOR/NAND operations in the CH347V1.1 programmer
+- Added: showing the programmer revision function
+- Added: erase check function
+- Added: filling code function
+
 * Fri Mar 13 2026 Mikhail Medvedev 1.8.1-1
 - Fix: increased interface speed
 - Fix: increased SPI NOR Flash operations speed
