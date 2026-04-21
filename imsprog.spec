@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.8.2
+Version: 1.8.3
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a/CH347t devices
@@ -153,12 +153,21 @@ pushd IMSProg_programmer
 %cmake_build
 popd
 
+pushd IMSProg_database_update
+%cmake -DCMAKE_INSTALL_SYSCONFDIR=%_sysconfdir
+%cmake_build
+popd
+
 %install
 pushd IMSProg_editor
 %cmake_install
 popd
 
 pushd IMSProg_programmer
+%cmake_install
+popd
+
+pushd IMSProg_database_update
 %cmake_install
 popd
 
@@ -189,6 +198,17 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Tue Apr 21 2026 Mikhail Medvedev 1.8.3-1
+- Fixed: If no chip is selected, the programmer was not detected
+- Fixed: MACOS library compatibility
+- Fixed: MACOS invalid pathes
+- Fixed: libusb detection
+- Fixed: udev rules install
+- Added: 2.5v VCC item
+- SPI NOR FLASH writing speed increased
+- Changed chip database update bash script to Qt app
+- The Zenity package is no longer used
+
 * Wed Mar 18 2026 Mikhail Medvedev 1.8.2-1
 - Fix: error reading/writing data from I2C chips on the CH347T version 5.44
 - Fix: bit error during NOR/NAND operations in the CH347V1.1 programmer
