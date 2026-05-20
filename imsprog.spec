@@ -1,5 +1,5 @@
 Name: imsprog
-Version: 1.8.3
+Version: 1.8.4
 Release: 1%dist
 
 Summary: I2C, SPI and MicroWire EEPROM/Flash chip programmer for CH341a/CH347t devices
@@ -21,18 +21,19 @@ Url: https://github.com/bigbigmdm/IMSProg
 Source: https://github.com/bigbigmdm/IMSProg/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: gcc-c++
-BuildRequires: pkgconfig(Qt5Core)
-BuildRequires: pkgconfig(Qt5Widgets)
-BuildRequires: cmake(Qt5LinguistTools)
+BuildRequires: pkgconfig(Qt6Core)
+BuildRequires: pkgconfig(Qt6Widgets)
+BuildRequires: pkgconfig(Qt6Network)
+BuildRequires: cmake(Qt6LinguistTools)
 BuildRequires: pkgconfig(libusb-1.0)
 BuildRequires: cmake
 BuildRequires: desktop-file-utils
 BuildRequires: libappstream-glib
 
 %description
-IMSProg is a free software for CH341A/CH347T based chip programmers with 
-graphical interface. With IMSProg you can read, verify, program, erase i2C, SPI, 
-SPI NOR, MicroWire, Dataflash EEPROM chips using the CH341A/CH347T programmer 
+IMSProg is a free software for CH341A/CH347T based chip programmers with
+graphical interface. With IMSProg you can read, verify, program, erase i2C, SPI,
+SPI NOR, MicroWire, Dataflash EEPROM chips using the CH341A/CH347T programmer
 device.
 
 IMSProg is a collection of tools:
@@ -43,8 +44,8 @@ web-server.
 
 %description -l ru_RU.UTF-8
 IMSProg - это бесплатное программное обеспечение для программаторов микросхем
-на базе CH341A/CH347T с графическим интерфейсом. С помощью IMSProg вы можете 
-читать, проверять, программировать, стирать микросхемы i2C, SPI, SPI NOR, 
+на базе CH341A/CH347T с графическим интерфейсом. С помощью IMSProg вы можете
+читать, проверять, программировать, стирать микросхемы i2C, SPI, SPI NOR,
 MicroWire EEPROM, DataFlash используя устройство-программатор CH341A/CH347T.
 
 IMSProg - это набор инструментов:
@@ -54,9 +55,9 @@ IMSProg_database_update - скрипт для обновления базы да
 внешнего веб-сервера.
 
 %description -l de_DE.UTF-8
-IMSProg ist eine kostenlose Software für CH341A/CH347T-basierte 
-Chip-Programmiergeräte mit grafischer Oberfläche. Mit IMSProg können Sie i2C, 
-SPI, SPI NOR, MicroWire, DataFlash EEPROM Chips mit dem CH341A/CH347T 
+IMSProg ist eine kostenlose Software für CH341A/CH347T-basierte
+Chip-Programmiergeräte mit grafischer Oberfläche. Mit IMSProg können Sie i2C,
+SPI, SPI NOR, MicroWire, DataFlash EEPROM Chips mit dem CH341A/CH347T
 Programmiergerät lesen, verifizieren, programmieren, löschen.
 
 IMSProg ist eine Sammlung von Werkzeugen:
@@ -66,9 +67,9 @@ IMSProg_database_update - Skript zur Aktualisierung der Chipdatenbank mit Hilfe
 eines externen Web-Servers.
 
 %description -l es_ES.UTF-8
-IMSProg es un software gratuito para programadores de chips basados en 
-CH341A/CH347T con interfaz gráfica. Con IMSProg puede leer, verificar, programar, 
-borrar chips i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM utilizando el 
+IMSProg es un software gratuito para programadores de chips basados en
+CH341A/CH347T con interfaz gráfica. Con IMSProg puede leer, verificar, programar,
+borrar chips i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM utilizando el
 dispositivo programador CH341A/CH347T.
 
 IMSProg es una colección de herramientas:
@@ -78,9 +79,9 @@ IMSProg_database_update - script para actualizar la base de datos de chips
 utilizando un servidor web externo.
 
 %description -l hu_HU.UTF-8
-Az IMSProg egy ingyenes szoftver CH341A/CH347T alapú chipprogramozók számára 
-grafikus felülettel. Az IMSProg segítségével a CH341A/CH347T programozó 
-eszközzel i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM chipeket olvashat, 
+Az IMSProg egy ingyenes szoftver CH341A/CH347T alapú chipprogramozók számára
+grafikus felülettel. Az IMSProg segítségével a CH341A/CH347T programozó
+eszközzel i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM chipeket olvashat,
 ellenőrizhet, programozhat, törölhet.
 
 Az IMSProg egy eszközgyűjtemény:
@@ -91,8 +92,8 @@ webszerver használatával.
 
 %description -l it_IT.UTF-8
 IMSProg è un software gratuito per programmatori di chip basati su CH341A/CH347T
-con interfaccia grafica. Con IMSProg è possibile leggere, verificare, 
-programmare, cancellare chip i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM, 
+con interfaccia grafica. Con IMSProg è possibile leggere, verificare,
+programmare, cancellare chip i2C, SPI, SPI NOR, MicroWire, DataFlash EEPROM,
 utilizzando il programmatore CH341A/CH347T.
 
 IMSProg è una raccolta di strumenti:
@@ -102,9 +103,9 @@ IMSProg_database_update - script per aggiornare il database dei chip utilizzando
 un server web esterno.
 
 %description -l pt_BR.UTF-8
-O IMSProg é um software gratuito para programadores de chips baseados no 
-CH341A/CH347T com interface gráfica. Com o IMSProg, você pode ler, verificar, 
-programar e apagar chips i2C, SPI, SPI NOR e MicroWire, DataFlash EEPROM usando 
+O IMSProg é um software gratuito para programadores de chips baseados no
+CH341A/CH347T com interface gráfica. Com o IMSProg, você pode ler, verificar,
+programar e apagar chips i2C, SPI, SPI NOR e MicroWire, DataFlash EEPROM usando
 o dispositivo programador CH341A/CH347T.
 
 O IMSProg é uma coleção de ferramentas:
@@ -140,8 +141,9 @@ IMSProg_database_update - 使用外部Web服务器更新芯片数据库的脚本
 
 %build
 # update translations
-lrelease-qt5 IMSProg_editor/language/*.ts
-lrelease-qt5 IMSProg_programmer/language/*.ts
+lrelease-qt6 IMSProg_editor/language/*.ts
+lrelease-qt6 IMSProg_programmer/language/*.ts
+lrelease-qt6 IMSProg_database_update/language/*.ts
 
 pushd IMSProg_editor
 %cmake -DCMAKE_INSTALL_SYSCONFDIR=%_sysconfdir
@@ -198,6 +200,18 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 %license LICENSE
 
 %changelog
+* Wed May 20 2026 Mikhail Medvedev 1.8.4-1
+- Fixed: segmentation fault in Qt6
+- Fixed: incorrect interface display on macOS
+- Fixed: write error to sector 0 in Windows
+- Fixed: incorrect saving of the database file in the chip editor
+- Fixed: Unable to erase the 93C66, 93C76 and 93C86 chips
+- Fixed: the font is too large in Qt6
+- Added: migration to Qt6
+- Added: specification file for Fedora
+- Added: universal Qt5/Qt6 CmakeLists.txt
+- Added: support for the spare area for NAND flash memory.
+
 * Tue Apr 21 2026 Mikhail Medvedev 1.8.3-1
 - Fixed: If no chip is selected, the programmer was not detected
 - Fixed: MACOS library compatibility
@@ -229,7 +243,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/*.xml
 
 * Tue Nov 25 2025 Mikhail Medvedev 1.7.2-1
 - Fix: NAND Flash information form freeze
-- Added new images for CH341A v1.7    
+- Added new images for CH341A v1.7
 - Added programmer type menu
 - Added support for the AT24CM02 chip
 
